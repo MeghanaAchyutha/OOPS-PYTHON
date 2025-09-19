@@ -1,0 +1,29 @@
+class Restaurant:
+    
+    def __init__(self):
+        self.name = 'Lavikiran'
+        self.address = 'Gooty'
+        self.rating = '5.0'
+        self.fam_items = 'paneer tikka'
+        
+    def add_items(self):
+        print('Adding the items')
+        
+    def del_items(self):
+        print('deleting the items')
+
+    def confirm_order(self):
+        print('conforming the order')
+
+def main():
+    r1 = Restaurant()
+    print('Name: ',r1.name)
+    print('Address: ',r1.name)
+    print('Rating: ',r1.name)
+    print('Famour Item: ',r1.name)
+    r1.add_items()
+    r1.del_items()
+    r1.confirm_order()
+
+if __name__=='__main__':
+    main()
