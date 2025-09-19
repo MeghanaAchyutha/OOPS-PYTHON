@@ -1,0 +1,58 @@
+class Bike:
+
+    def __init__(self, brand, milage, color, tires, fuel):
+        self.brand = brand
+        self.milage = milage
+        self.color = color
+        self.tires = tires
+        self.fuel = fuel
+
+    def start_engine(self):
+        print(self.brand,'engine is started')
+
+    def stop_engine(self):
+        print(self.brand,'engine is stopped')
+
+    def brakes(self):
+        print('bakes are applied')
+        
+    def fuels(self):
+        print(self.fuel,'is used')
+
+    def accleration(self):
+        print('accelerating the',self.brand)
+
+    def display(self):
+        print(self.brand)
+        print(self.milage)
+        print(self.color)
+        print(self.tires)
+        print(self.fuel)
+
+def main():
+    b1 = Bike('KTM','60kms','orange','double tired','petrol')
+    b1.display()
+    b1.start_engine()
+    b1.stop_engine()
+    b1.brakes()
+    b1.fuels()
+    b1.accleration
+
+    b2 = Bike('Honda activa','100kms','blue','double tired','petrol')
+    b2.display()
+    b2.start_engine()
+    b2.stop_engine()
+    b2.brakes()
+    b2.fuels()
+    b2.accleration
+
+    b3 = Bike('EV Bike','800kms','gray','double tired','electrical')
+    b3.display()
+    b3.start_engine()
+    b3.stop_engine()
+    b3.brakes()
+    b3.fuels()
+    b3.accleration
+
+if __name__=='__main__':
+    main()
