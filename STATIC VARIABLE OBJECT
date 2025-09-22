@@ -1,0 +1,43 @@
+class Citizen:
+    nation:'indian'
+
+    def __init__(self,name,age,location):
+        self.name = name
+        self.age = age
+        self.location = location
+
+    def display(self):
+        print(self.name,self.age,self.location)
+
+def main():
+    c1 = Citizen('lavanya',44,'atp')
+    c2 = Citizen('Kiran',49,'gty')
+
+    c1.display()
+    c2.display()
+
+if __name__ == '__main__':
+    main()
+
+-------------------------------------------------
+
+class Citizen:
+    nation:'indian'
+
+    def __init__(self,name,age,location):
+        self.name = name
+        self.age = age
+        self.location = location
+
+    def display(self):
+        print(self.name,self.age,self.location)
+
+def main():
+    c1 = Citizen('lavanya',44,'atp')
+    c2 = Citizen('Kiran',49,'gty')
+
+    print(c1.__dict__)
+    print(c2.__dict__)
+
+if __name__ == '__main__':
+    main()
